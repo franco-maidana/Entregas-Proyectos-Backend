@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "franco Maidana",
+    "photo": "foto random uno",
+    "email": "FrancoMaidana@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "Sofia Gomez",
+    "photo": "foto random dos",
+    "email": "SofiaGomez@gmail.com"
+  },
+  {
+    "id": 3,
+    "name": "Noelia Lopez",
+    "photo": "foto random tres",
+    "email": "NoeliaLopez@gmail.com"
+  }
+]

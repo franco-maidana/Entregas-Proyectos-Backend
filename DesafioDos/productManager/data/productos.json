@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Pantalones",
+    "photo": "fotoRandon",
+    "price": 250,
+    "stock": 50
+  },
+  {
+    "id": 2,
+    "title": "Remera",
+    "photo": "FotoRandom2",
+    "price": 150,
+    "stock": 15
+  }
+]

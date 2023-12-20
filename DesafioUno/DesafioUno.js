@@ -49,7 +49,6 @@ Eventos.create({
 console.log(ProductManager.GuardandoProductos);
 
 console.log(Eventos.read());
-
 console.log(Eventos.readOne(1));
 console.log(Eventos.readOne(2));
 
