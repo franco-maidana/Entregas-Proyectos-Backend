@@ -18,7 +18,7 @@ class ProductManager {
     };
     ProductManager.productosGuardados.push(Eventos);
   }
-
+  // datos de productos cargados en el JSON
   datosDeLaRuta(ruta) {
     try {
       const jsonData = JSON.stringify(
@@ -32,7 +32,7 @@ class ProductManager {
       console.error("Ocurrió un Error al Obtener el Archivo:", error);
     }
   }
-
+  // datos obtenidos del JSON y mostrado
   read(ruta) {
     try {
       const datosLeidos = JSON.parse(fs.readFileSync(ruta, "utf-8"));
@@ -41,7 +41,7 @@ class ProductManager {
       console.error("Ocurrió un Error al Leer el Archivo:", error);
     }
   }
-
+  // datos obtenidos de productos medinte el id
   readOnId(id) {
     const foundProduct = ProductManager.productosGuardados.find(
       (product) => product.id === id
