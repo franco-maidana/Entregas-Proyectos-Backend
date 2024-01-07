@@ -42,7 +42,7 @@ class UserManager {
   }
 }
 
-const ruta = "./desafioDos/UsersManager/data/Usuarios.fs.json";
+const ruta = "./desafio2/UsersManager/data/Usuarios.fs.json";
 
 const UsuariosNuevos = new UserManager();
 
