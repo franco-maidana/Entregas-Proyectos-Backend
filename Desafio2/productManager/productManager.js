@@ -50,7 +50,7 @@ class ProductManager {
   }
 }
 
-const ruta = "./desafioDos/productManager/data/productos.json";
+const ruta = "./desafio2/productManager/data/productos.json";
 
 // Ejemplo de uso
 const manager = new ProductManager();
