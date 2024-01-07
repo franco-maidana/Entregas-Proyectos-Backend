@@ -1,0 +1,23 @@
+[
+  {
+    "id": "480ff9a7731c5e7cd1af4896",
+    "title": "Pantalones",
+    "photo": "fotoRandom",
+    "price": 250,
+    "stock": 5
+  },
+  {
+    "id": "494f6a77f1d28034c5a2af8c",
+    "title": "Pantalones",
+    "photo": "fotoRandom",
+    "price": 250,
+    "stock": 5
+  },
+  {
+    "id": "19f870bc7fa101ceba237dc9",
+    "title": "Pantalones",
+    "photo": "fotoRandom",
+    "price": 250,
+    "stock": 5
+  }
+]
