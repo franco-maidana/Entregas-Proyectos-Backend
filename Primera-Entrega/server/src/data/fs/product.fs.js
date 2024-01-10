@@ -99,9 +99,38 @@ class ProductManager {
       return error.message;
     }
   }
+
+  async update(id, data) {
+    try {
+      const index = ProductManager.#productosGuardados.findIndex(
+        (product) => product.id === id
+      );
+      if (index !== -1) {
+        ProductManager.#productosGuardados[index] = {
+          ...ProductManager.#productosGuardados[index],
+          ...data,
+        };
+        await fs.promises.writeFile(
+          this.path,
+          JSON.stringify(ProductManager.#productosGuardados, null, 2),
+          "utf-8"
+        );
+        console.log(
+          "Producto actualizado:",
+          ProductManager.#productosGuardados[index]
+        );
+        return ProductManager.#productosGuardados[index];
+      } else {
+        throw new Error("Producto no encontrado");
+      }
+    } catch (error) {
+      console.error(error.message);
+      return error.message;
+    }
+  }
 }
 
-const productos = new ProductManager("./fs/files/productos.json");
+const productos = new ProductManager("./src/data/fs/files/productos.json");
 
 export default productos;
 
@@ -112,11 +141,20 @@ export default productos;
 //   stock: 5,
 // });
 
-async function manage() {
-  await productos.read();
-  await productos.readOne("494f6a77f1d28034c5a2af8c");
-  await productos.readOne();
-  await productos.destroy(); // cuando se pone el id aca se tira error y no me toma
-}
+// async function manage() {
+//   await productos.read();
+//   await productos.readOne();
+//   await productos.destroy();
+// }
+// manage();
 
-manage();
+const productoActualizar = "72c962d0af78a0f380586f96";
+
+const nuevosDatosProducto = {
+  title: "remera",
+  price: 450,
+  stock: 25,
+};
+
+// productos.update(productoActualizar, nuevosDatosProducto);
+// lo comente por que se vuelve loco el servidor
