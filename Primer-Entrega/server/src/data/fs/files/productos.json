@@ -1,0 +1,42 @@
+[
+  {
+    "id": "5645aee620c0f49ca3a28fdf",
+    "title": "Pantalones",
+    "photo": "fotoRandom",
+    "price": 250,
+    "stock": 5
+  },
+  {
+    "id": "72c962d0af78a0f380586f96",
+    "title": "remera musculosa",
+    "photo": "fotoRandom",
+    "price": 450,
+    "stock": 25
+  },
+  {
+    "id": "8d6d74c81050ac7076907e7e",
+    "title": "Pantalones",
+    "photo": "fotoRandom",
+    "price": 250,
+    "stock": 5
+  },
+  {
+    "id": "8afd4db4c49d06cc78f5ed27",
+    "title": "Remeras",
+    "photo": "fotoRandom2",
+    "price": 450,
+    "stock": 50
+  },
+  {
+    "id": "c6ef639108a2385528f6b257",
+    "title": "Remeras",
+    "price": 350,
+    "stock": 10
+  },
+  {
+    "id": "ed6e60c39b1776267affe569",
+    "title": "Remeras con scote",
+    "price": 350,
+    "stock": 10
+  }
+]
