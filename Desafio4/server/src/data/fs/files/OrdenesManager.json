@@ -1,0 +1,51 @@
+[
+  {
+    "id": "b1560d3fc6e211c7ed6a0b80",
+    "uid": "idUsuario123",
+    "state": "reservado",
+    "quantity": 2,
+    "pid": "idProducto789"
+  },
+  {
+    "id": "69af3e4f36dee94de116da3b",
+    "uid": "idUsuario456",
+    "state": "confirmado",
+    "quantity": 4,
+    "pid": "idProducto0123"
+  },
+  {
+    "id": "20bd99f023e9add21824ee5d",
+    "uid": "idUsuario123",
+    "state": "reservado",
+    "quantity": 2,
+    "pid": "idProducto789"
+  },
+  {
+    "id": "2387baaa2488a04333b1d662",
+    "uid": "idUsuario456",
+    "state": "confirmado",
+    "quantity": 4,
+    "pid": "idProducto0123"
+  },
+  {
+    "id": "e824fe5c46aedf00a27a4603",
+    "uid": "idUsuario456",
+    "state": "confirmado",
+    "quantity": 4,
+    "pid": "idProducto0123"
+  },
+  {
+    "id": "3c94a30e4bfca4a88a64f4cb",
+    "uid": "idUsuario123",
+    "state": "cancelado",
+    "quantity": 5,
+    "pid": "idProducto789"
+  },
+  {
+    "id": "c531dc52959c657d2098b992",
+    "uid": "idUsuario456",
+    "state": "confirmado",
+    "quantity": 4,
+    "pid": "idProducto0123"
+  }
+]
