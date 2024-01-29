@@ -41,6 +41,18 @@ socketServer.on("connection", (socket) => {
       console.log(error);
     }
   });
+  // formulario
+  socket.emit("formulario", "estamos en el sitio de formulario");
+  socket.on("newProductForm", async (data) => {
+    try {
+      console.log(data);
+      // Deberías agregarlo al JSON de productos con el método correspondiente
+      await productos.create(data);
+      socket.emit("productos", productos.read());
+    } catch (error) {
+      console.log(error);
+    }
+  });
 });
 
 server.use(express.json());

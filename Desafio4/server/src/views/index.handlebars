@@ -10,6 +10,7 @@
 {{#each products}}
 {{!-- cuerpo de lo que se quiere loopear --}}
 {{!-- this va a ser referencia de CADA UNO de los elementos a recorrer  --}}
-<h3>{{this}}</h3>
+<h3>{{this.title}}</h3>
+<img style="width: 250px;" src="{{this.photo}}">
 {{/each}}
 </main>

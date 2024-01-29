@@ -7,7 +7,8 @@ import MostrarUsuario from "./views/users.view.js";
 
 const router = Router();
 
-router.use("/api", apiRouter);
+// van todas las rutas para la vista
+// router.use("/api", apiRouter);
 router.use("/", viewsRouter);
 router.use("/products", productsRouter);
 router.use("/register", MostrarUsuario);
