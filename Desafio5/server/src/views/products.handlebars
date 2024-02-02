@@ -1,0 +1,13 @@
+<div class="d-flex flex-wrap justify-content-around mt-4">
+  {{#each products}}
+    <div class="card mb-4" style="width: 15rem;">
+      <img src="{{this.photo}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{this.title}}</h5>
+        <h6> $Usd {{this.price}}</h6>
+        <h6>Unidades Disponibles: {{this.stock}}</h6>
+        <a href="#" class="btn btn-primary">Agregar a Carro</a>
+      </div>
+    </div>
+  {{/each}}
+</div>
