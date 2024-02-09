@@ -1,0 +1,16 @@
+{{!-- directamente diseñar la pagina de inicio --}}
+<main>
+  <h1>PAGINA DE PRODUCTOS</h1>
+  <h2>{{date}}</h2>
+  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident accusamus maxime corporis nostrum dolores, suscipit quo modi odit eligendi ea corrupti aut perspiciatis sed illum libero veritatis cupiditate. Illo, cupiditate.
+  Qui beatae laudantium placeat, commodi assumenda fugit voluptatibus excepturi libero blanditiis, eius harum, numquam veritatis amet dignissimos ducimus dolorem. Odio blanditiis aperiam a aliquam odit ad nulla soluta id corrupti!
+  Deleniti, tempore! Saepe cumque sint facilis reiciendis doloremque neque dolore, optio ducimus eaque laboriosam, sunt sit non repellendus, error totam rerum necessitatibus aliquid incidunt maiores. Dolorum dignissimos quasi error ex?
+  Sunt iusto totam eaque obcaecati quod, voluptatem quis reprehenderit nisi quibusdam minima aperiam possimus ratione atque saepe aut aspernatur, labore quas excepturi et molestias qui illum. Deleniti temporibus nam unde.
+  Eveniet consequatur qui architecto provident reiciendis cum, sint fuga dolore vero obcaecati nesciunt sunt in nihil veniam voluptatem, natus deleniti. Voluptates, omnis harum temporibus similique voluptatum exercitationem fugiat laboriosam saepe.</P>
+{{#each products}}
+{{!-- cuerpo de lo que se quiere loopear --}}
+{{!-- this va a ser referencia de CADA UNO de los elementos a recorrer  --}}
+<h3>{{this.title}}</h3>
+<img style="width: 250px;" src="{{this.photo}}">
+{{/each}}
+</main>
