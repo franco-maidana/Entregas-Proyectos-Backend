@@ -1,0 +1,11 @@
+{{#users}}
+  <h2 class="text-center">PERSONAL PROFILE:</h2>
+  <div class="card m-auto" style="width: 320px;">
+    <img src="{{this.photo}}" class="card-img-top" alt="..." />
+    <div class="card-body d-flex flex-column justify-content-center">
+      <h5 class="card-title text-center">{{this.name}}</h5>
+      <p class="card-text text-center">{{this.email}}</p>
+      <button type="button" class="btn btn-primary btn-sm">Edit</button>
+    </div>
+  </div>
+{{/users}}
