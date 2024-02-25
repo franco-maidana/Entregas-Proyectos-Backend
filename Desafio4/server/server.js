@@ -41,6 +41,7 @@ socketServer.on("connection", (socket) => {
       console.log(error);
     }
   });
+<<<<<<< HEAD
   // formulario
   socket.emit("formulario", "estamos en el sitio de formulario");
   socket.on("newProductForm", async (data) => {
@@ -53,6 +54,8 @@ socketServer.on("connection", (socket) => {
       console.log(error);
     }
   });
+=======
+>>>>>>> 34e14413fe6bb275abfed6ea28d55270d119d948
 });
 
 server.use(express.json());

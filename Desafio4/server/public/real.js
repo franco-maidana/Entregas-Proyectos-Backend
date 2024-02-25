@@ -20,10 +20,24 @@ socket.on("productos", (data) => {
 });
 // recibimos lo que mandamos el backend con la primera propiedad que ponemos
 socket.on("welcome", (message) => alert(message));
+<<<<<<< HEAD
 
 socket.on("new success", (message) => alert(message));
 
 // enviamos algo del frond al backend
+=======
+// enviamos algo del frond al backend
+// socket.emit("newProducts", {
+//   title: "buzos Gap",
+//   photo:
+//     "https://acdn.mitiendanube.com/stores/985/414/products/137742ee-a1e2-4c8b-b764-c8d50e605ccd-88167d6f94e69810e517039479586363-320-0.webp",
+//   price: 25500,
+//   stock: 10,
+// });
+
+socket.on("new success", (message) => alert(message));
+
+>>>>>>> 34e14413fe6bb275abfed6ea28d55270d119d948
 document.querySelector("#newProduct").addEventListener("click", (event) => {
   event.preventDefault();
   const title = document.querySelector("#Title").value;
