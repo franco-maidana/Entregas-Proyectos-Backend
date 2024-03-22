@@ -4,7 +4,7 @@ import { Usuarios } from "../../data/mongo/manager.model.js";
 
 export default class UsersRouter extends CustomRouter {
   init() {
-    this.create("/", async (req, res, next) => {
+    this.create("/", ["USER", "ADMIN", "PREM"], async (req, res, next) => {
       try {
         const data = req.body;
         const response = await Usuarios.create(data);
@@ -17,7 +17,7 @@ export default class UsersRouter extends CustomRouter {
       }
     });
 
-    this.read("/", async (req, res, next) => {
+    this.read("/", ["PUBLIC"], async (req, res, next) => {
       try {
         let filter = {};
         let orderAndPaginate = {
@@ -42,7 +42,7 @@ export default class UsersRouter extends CustomRouter {
       }
     });
 
-    this.read("/:uid", async (req, res, next) => {
+    this.read("/:uid", ["USER", "ADMIN", "PREM"], async (req, res, next) => {
       try {
         const { uid } = req.params;
         const one = await Usuarios.readOne(uid);
@@ -55,7 +55,7 @@ export default class UsersRouter extends CustomRouter {
       }
     });
 
-    this.upDate("/:uid", async (req, res, next) => {
+    this.upDate("/:uid", ["ADMIN", "PREM"], async (req, res, next) => {
       try {
         const { uid } = req.params;
         const data = req.body;
@@ -69,7 +69,7 @@ export default class UsersRouter extends CustomRouter {
       }
     });
 
-    this.destroy("/:uid", async (req, res, next) => {
+    this.destroy("/:uid", ["ADMIN", "PREM"], async (req, res, next) => {
       try {
         const { uid } = req.params;
         const one = await users.destroy(uid);
