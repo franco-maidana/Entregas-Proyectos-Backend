@@ -1,0 +1,16 @@
+[
+  {
+    "id": "90bf506a62e6a6c7dd0aac10",
+    "uid": "idUsuario123",
+    "state": "reservado",
+    "quantity": 2,
+    "pid": "idProducto789"
+  },
+  {
+    "id": "620aa401eb94f8b81394e1b2",
+    "uid": "idUsuario456",
+    "state": "confirmado",
+    "quantity": 4,
+    "pid": "idProducto0123"
+  }
+]
